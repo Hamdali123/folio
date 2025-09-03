@@ -1,0 +1,58 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="uk-section uk-section-default animate-fade-in" style="padding: 2rem 1rem; margin-bottom: 2.5rem;">
+    <div class="uk-container">
+        <div class="uk-grid-large uk-flex-middle" uk-grid>
+            
+            <!-- Foto Profil -->
+            <div class="uk-width-1-3@m uk-flex uk-flex-center">
+                <img src="{{ url_for('static', filename='img/ppdali.jpg') }}"
+                     alt="Foto Profil Hamdali"
+                     class="uk-border-circle uk-box-shadow-medium"
+                     width="250" height="250">
+            </div>
+
+            <!-- Deskripsi -->
+            <div class="uk-width-2-3@m">
+                <h1 class="uk-heading-medium">Tentang Saya</h1>
+                <p class="uk-text-lead">
+                    Halo, saya <strong>Hamdali</strong>, seorang yang berfokus pada 
+                    <span class="uk-text-bold">jaringan komputer, sistem networking, MikroTik, dan Cisco dasar</span>. 
+                    Saya memiliki ketertarikan mendalam pada konfigurasi jaringan, routing, VLAN, 
+                    serta pengelolaan infrastruktur IT agar dapat berjalan stabil dan efisien.
+                </p>
+                <p>
+                    Pengalaman saya mencakup instalasi dan konfigurasi <strong>MikroTik RouterOS</strong> 
+                    menggunakan Winbox, pembuatan topologi jaringan, manajemen bandwidth, firewall, 
+                    hingga routing dinamis seperti OSPF. Selain itu, saya juga memahami 
+                    <strong>konsep dasar Cisco</strong> seperti konfigurasi interface, VLAN, dan routing statis.
+                </p>
+                <p>
+                    Dengan latar belakang ini, saya siap membantu dalam mengelola dan mengoptimalkan 
+                    jaringan komputer, baik untuk skala kecil maupun besar.
+                </p>
+
+                <!-- Kontak -->
+                <div class="uk-margin-top">
+                    <h3 class="uk-h4">Hubungi Saya</h3>
+                    <ul class="uk-list uk-list-divider">
+                        <li><i class="fas fa-envelope uk-margin-small-right"></i>Email: 
+                            <a href="mailto:dali75943@gmail.com">dali75943@gmail.com</a>
+                        </li>
+                        <li><i class="fab fa-facebook uk-margin-small-right"></i>Facebook: 
+                            <a href="https://facebook.com/heamdally.ly" target="_blank">Heamdally Ly</a>
+                        </li>
+                        <li><i class="fab fa-instagram uk-margin-small-right"></i>Instagram: 
+                            <a href="https://instagram.com/heamdally.ly" target="_blank">@heamdally.ly</a>
+                        </li>
+                        <li><i class="fab fa-whatsapp uk-margin-small-right"></i>WhatsApp: 
+                            <a href="https://wa.me/6283815083640" target="_blank">+62 838-1508-3640</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

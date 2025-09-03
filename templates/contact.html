@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="uk-section uk-section-default animate-fade-in" style="padding: 2rem 1rem;">
+    <div class="uk-container">
+        <h1 class="uk-heading-medium uk-text-center">Hubungi Saya</h1>
+        <p class="uk-text-lead uk-text-center" style="max-width: 800px; margin: auto;">
+            Jangan ragu untuk menghubungi saya jika Anda ingin berdiskusi seputar 
+            <span class="uk-text-bold">jaringan komputer, konfigurasi MikroTik, maupun solusi networking</span>. 
+            Saya juga memiliki pemahaman dasar dalam <span class="uk-text-bold">Cisco</span> (Packet Tracer), 
+            termasuk konfigurasi IP, static routing, dan VLAN sederhana. 
+            Terbuka untuk kolaborasi, konsultasi, atau sekadar berbagi pengalaman.
+        </p>
+
+        <div class="uk-grid-large uk-child-width-1-2@m uk-margin-large-top" uk-grid>
+            
+            <!-- Informasi Kontak -->
+            <div>
+                <h3><span uk-icon="icon: info; ratio: 1.2"></span> Informasi Kontak</h3>
+                <ul class="uk-list uk-list-divider uk-margin-top">
+                    <li>
+                        <span uk-icon="icon: mail"></span> 
+                        Email: <a href="mailto:dali75943@gmail.com">dali75943@gmail.com</a>
+                    </li>
+                    <li>
+                        <span uk-icon="icon: linkedin"></span> 
+                        LinkedIn: <a href="https://linkedin.com/in/Hamdali" target="_blank">Hamdali</a>
+                    </li>
+                    <li>
+                        <span uk-icon="icon: github"></span> 
+                        GitHub: <a href="https://github.com/Hamdali123" target="_blank">Hamdali123</a>
+                    </li>
+                    <li>
+                        <span uk-icon="icon: receiver"></span> 
+                        Telepon: <a href="tel:+6283815083640">+62 838-1508-3640</a>
+                    </li>
+                    <li>
+                        <span uk-icon="icon: location"></span> 
+                        Lokasi: Tangerang, Banten, Indonesia
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Form Kirim Pesan -->
+            <div>
+                <h3><span uk-icon="icon: comments; ratio: 1.2"></span> Kirim Pesan</h3>
+                <form class="uk-form-stacked uk-margin-top">
+                    <div class="uk-margin">
+                        <label class="uk-form-label">Nama Lengkap</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text" placeholder="Nama Anda">
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label">Alamat Email</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="email" placeholder="Email Anda">
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label">Subjek</label>
+                        <div class="uk-form-controls">
+                            <input class="uk-input" type="text" placeholder="Subjek Pesan">
+                        </div>
+                    </div>
+
+                    <div class="uk-margin">
+                        <label class="uk-form-label">Pesan Anda</label>
+                        <div class="uk-form-controls">
+                            <textarea class="uk-textarea" rows="5" placeholder="Tulis pesan Anda di sini..."></textarea>
+                        </div>
+                    </div>
+
+                    <button class="uk-button uk-button-primary uk-border-rounded">Kirim Pesan</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
